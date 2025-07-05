@@ -7,8 +7,8 @@ export default function HeroTerminal() {
     <div className=" relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute top-0 left-0 w-full flex justify-center">
         <div className="w-full max-w-7xl p-4">
-          <div className=" relative z-10 w-14 h-14 bg-black/50 backdrop-blur-lg rounded-lg p-2 border border-cyan-900/40">
-            <img src="/logo-mf.png" alt="Logo" className=" w-full" />
+          <div className=" relative z-10 w-12 h-12 sm:w-14 sm:h-14 bg-black/50 backdrop-blur-lg rounded-lg p-2 border border-cyan-900/40">
+            <img src="/logo-mf.png" alt="Logo MF" className=" w-full h-full" />
           </div>
         </div>
       </div>
@@ -25,10 +25,10 @@ export default function HeroTerminal() {
           <TerminalControls />
           <div className=" font-cascadia">
             <CommandText>$ whoami</CommandText>
-            <h1 className=" text-4xl md:text-5xl font-bold mt-2 mb-4">
+            <h1 className=" text-4xl md:text-5xl font-bold mt-2 mb-1">
               Mauricio Florez
             </h1>
-            <p className=" text-gray-300 mb-2">Junior Frontend Developer</p>
+            <p className=" text-gray-300 mb-4">Frontend Developer</p>
             <CommandText>$ skills</CommandText>
             <div className=" flex flex-wrap gap-2 mt-2">
               <SkillTag texto="JavaScript" />

@@ -4,5 +4,5 @@ type CommandTextProps = {
 };
 
 export default function CommandText({ children, className }: CommandTextProps) {
-  return <p className={`text-cyan-400 mb-2 ${className}`}>{children}</p>;
+  return <p className={`text-cyan-400 mb-4 ${className}`}>{children}</p>;
 }
