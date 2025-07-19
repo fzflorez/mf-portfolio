@@ -15,11 +15,11 @@ export default function SocialLinks({
     <a
       href={href}
       target="_blank"
-      className=" flex items-center gap-3 px-4 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all hover:scale-105 border border-gray-700/50 group"
+      className="flex items-center gap-3 px-4 py-3 bg-cyan-500/20 rounded-lg border border-cyan-500/30 hover:bg-cyan-500/30 duration-300 transition-colors"
     >
-      <div className=" p-2 bg-gray-700/50 rounded-lg group-hover:bg-gray-600/50 transition-colors">
+      <div className="p-2 bg-cyan-500/30 rounded-lg group-hover:bg-cyan-600/30 transition-colors">
         <svg
-          className=" w-5 h-5 text-cyan-400"
+          className="w-5 h-5 text-cyan-400"
           fill="currentColor"
           viewBox="0 0 24 24"
         >
@@ -27,8 +27,8 @@ export default function SocialLinks({
         </svg>
       </div>
       <div>
-        <p className=" font-semibold text-gray-200">{title}</p>
-        <p className=" text-sm text-gray-400">{username}</p>
+        <p className="font-semibold text-white">{title}</p>
+        <p className="text-sm font-light text-gray-300">{username}</p>
       </div>
     </a>
   );

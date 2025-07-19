@@ -1,25 +1,25 @@
 import { toast } from "react-toastify";
-import CommandText from "./CommandText";
-import SocialLinks from "./SocialLinks";
-import TerminalControls from "./TerminalControls";
+import CommandText from "./command-text";
+import SocialLinks from "./social-links";
+import TerminalControls from "./terminal-controls";
 
 export default function ContactInfo() {
   return (
-    <div className=" max-w-4xl mx-auto" data-aos="fade-left">
-      <div className=" relative p-8 rounded-2xl overflow-hidden bg-black/50 backdrop-blur-lg border-2 border-cyan-900/40">
-        <div className=" absolute inset-0 bg-gradient-to-r from-cyan-500/5 to-blue-500/5"></div>
-        <div className=" relative z-10">
+    <div className="max-w-4xl mx-auto" data-aos="fade-left">
+      <div className="relative p-8 rounded-2xl overflow-hidden bg-black/50 backdrop-blur-lg border-2 border-cyan-900/40">
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 to-cyan-500/20"></div>
+        <div className="relative z-10">
           <TerminalControls />
-          <div className=" font-cascadia">
+          <div className="font-cascadia">
             <CommandText>$ contact --info</CommandText>
-            <h2 className=" text-3xl font-bold mb-8 text-gray-200">
+            <h2 className="text-3xl font-bold mb-8 text-gray-200">
               Let's Connect
             </h2>
-            <CommandText className=" mt-8">$ contact --email</CommandText>
-            <div className="flex flex-col gap-4 md:flex-row md:items-center">
+            <CommandText className="mt-8">$ contact --email</CommandText>
+            <div className="flex flex-col gap-4 text-white sm:flex-row md:items-center">
               <a
                 href="mailto:fzflorez02@gmail.com"
-                className=" inline-block px-6 py-3 bg-cyan-500/10 text-white rounded-lg border border-cyan-500/20 hover:bg-cyan-500/20 transition-colors duration-300"
+                className="w-fit gap-2 px-6 py-3 bg-cyan-500/10 rounded-lg border border-cyan-500/20 hover:bg-cyan-500/20 duration-300 transition-colors"
               >
                 fzflorez02@gmail.com
               </a>
@@ -28,7 +28,7 @@ export default function ContactInfo() {
                   navigator.clipboard.writeText("fzflorez02@gmail.com");
                   toast.success("Correo copiado", { autoClose: 2000 });
                 }}
-                className="p-2 bg-cyan-500/10 text-white rounded-lg border border-cyan-500/20 hover:bg-cyan-500/20 transition-colors duration-300"
+                className="w-fit p-3 bg-cyan-500/10 rounded-lg border border-cyan-500/20 hover:bg-cyan-500/20 transition-colors duration-300"
                 aria-label="Copiar correo"
               >
                 <svg
@@ -56,18 +56,18 @@ export default function ContactInfo() {
                 </svg>
               </button>
             </div>
-            <CommandText className=" mt-8">$ resume.pdf</CommandText>
+            <CommandText className="mt-8">$ resume.pdf</CommandText>
             <a
-              href="/MauricioFlorez-Resume.pdf"
+              href="./docs/mauricio-florez_resume.pdf"
               download
-              className=" inline-flex items-center gap-2 px-6 py-3 bg-cyan-500/10 text-white rounded-lg border border-cyan-500/20 hover:bg-cyan-500/20 transition-colors duration-300"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500/10 rounded-lg border border-cyan-500/20 hover:bg-cyan-500/20 duration-300 transition-colors"
             >
-              <svg className=" w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 16l4-5h-3V4h-2v7H8l4 5zM5 18h14v2H5v-2z"></path>
               </svg>
               <span>Download Resume</span>
             </a>
-            <CommandText className=" mt-8">$ ls ./social-links</CommandText>
+            <CommandText className="mt-8">$ ls ./social-links</CommandText>
             <div className=" grid grid-cols-1 sm:grid-cols-2 gap-4">
               <SocialLinks
                 href="https://github.com/fzflorez"
@@ -78,7 +78,7 @@ export default function ContactInfo() {
               <SocialLinks
                 title="LinkedIn"
                 username="Mauricio Florez"
-                href="https://www.linkedin.com/in/mauricio-florez-samudio-20a144317/"
+                href="https://www.linkedin.com/in/fzflorez/"
                 path="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
               />
             </div>
