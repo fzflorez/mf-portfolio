@@ -32,7 +32,7 @@ export default function HeroTerminal() {
             <CommandText>$ skills</CommandText>
             <div className="flex flex-wrap gap-2 mt-2">
               <SkillTag texto="JavaScript" />
-              <SkillTag texto="React.js" />
+              <SkillTag texto="React" />
               <SkillTag texto="TypeScript" />
               <SkillTag texto="Tailwind CSS" />
             </div>
