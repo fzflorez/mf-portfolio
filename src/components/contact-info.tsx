@@ -58,7 +58,7 @@ export default function ContactInfo() {
             </div>
             <CommandText className="mt-8">$ resume.pdf</CommandText>
             <a
-              href="./docs/Mauricio-Florez_CV.pdf"
+              href="/docs/Mauricio-Florez_CV.pdf"
               download
               className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-500/10 rounded-lg border border-cyan-500/20 hover:bg-cyan-500/20 duration-300 transition-colors"
             >
