@@ -30,7 +30,7 @@ export default function HeroTerminal() {
             </h1>
             <p className="text-gray-300 mb-4">Frontend Developer</p>
             <CommandText>$ skills</CommandText>
-            <div className="flex flex-wrap gap-2 mt-2">
+            <div className="flex flex-wrap gap-3 mt-2">
               <SkillTag texto="JavaScript" />
               <SkillTag texto="React" />
               <SkillTag texto="TypeScript" />
