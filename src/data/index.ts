@@ -41,6 +41,6 @@ export const projects: Project[] = [
     image: "user-landing",
     title: "User Landing",
     description: "View a user list and check their details easily.",
-    link: "https://mf-user-landing.netlify.app/",
+    link: "https://user-landing.netlify.app/",
   },
 ];
