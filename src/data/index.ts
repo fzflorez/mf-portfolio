@@ -34,7 +34,7 @@ export const projects: Project[] = [
     image: "loan-calculator",
     title: "Loan Calculator",
     description: "Instantly simulate and calculate your loan payments.",
-    link: "https://loan-calculator.netlify.app/",
+    link: "https://mf-loan-calculator.netlify.app/",
   },
   {
     id: 6,
